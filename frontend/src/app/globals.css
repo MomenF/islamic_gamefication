@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #090d16;
+  --background: #030712;
   --foreground: #f8fafc;
 }
 
@@ -12,7 +12,15 @@
 }
 
 body {
-  background: var(--background);
+  background-color: #030712;
+  background-image: 
+    radial-gradient(circle at 50% -20%, rgba(13, 148, 136, 0.22) 0%, transparent 60%),
+    radial-gradient(circle at 10% 80%, rgba(245, 158, 11, 0.05) 0%, transparent 40%),
+    url('/islamic_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-cairo), sans-serif;
   overflow-x: hidden;
@@ -20,10 +28,59 @@ body {
 
 /* Premium Gaming & PWA Utilities */
 .glass-panel {
-  background: rgba(15, 23, 42, 0.45);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(8, 13, 24, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.glass-card-teal {
+  background: linear-gradient(135deg, rgba(13, 148, 136, 0.08) 0%, rgba(8, 13, 24, 0.75) 100%);
+  border: 1px solid rgba(13, 148, 136, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card-teal:hover {
+  border-color: rgba(13, 148, 136, 0.4);
+  box-shadow: 0 12px 40px 0 rgba(13, 148, 136, 0.2);
+  transform: translateY(-4px);
+}
+
+.glass-card-amber {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(8, 13, 24, 0.75) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card-amber:hover {
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 12px 40px 0 rgba(245, 158, 11, 0.2);
+  transform: translateY(-4px);
+}
+
+.glass-card-rose {
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.08) 0%, rgba(8, 13, 24, 0.75) 100%);
+  border: 1px solid rgba(244, 63, 94, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card-rose:hover {
+  border-color: rgba(244, 63, 94, 0.4);
+  box-shadow: 0 12px 40px 0 rgba(244, 63, 94, 0.2);
+  transform: translateY(-4px);
+}
+
+.glass-card-emerald {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(8, 13, 24, 0.75) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card-emerald:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 12px 40px 0 rgba(16, 185, 129, 0.2);
+  transform: translateY(-4px);
 }
 
 .gold-glow {
